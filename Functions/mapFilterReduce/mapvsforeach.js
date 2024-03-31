@@ -4,10 +4,12 @@
 
 const arrayNumeros = [2, 5, 3, 4, 7];
 
-const resultadoMapeo = arrayNumeros.map(function (elemento, index, array) {
-  return elemento + 4;
-});
-
+const resultadoMapeo = arrayNumeros
+  .map(function (elemento, index, array) {
+    return elemento + 4;
+  })
+  .filter();
+// a map se le puede encadenar otras funciones como filter
 const resultadoForEach = arrayNumeros.forEach(function (
   elemento,
   index,
